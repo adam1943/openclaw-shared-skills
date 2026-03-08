@@ -1,0 +1,44 @@
+{
+  "version": "0.1",
+  "updated": "2026-03-08",
+  "default_model": "bailian/qwen3.5-plus",
+  "routing_rules": [
+    {
+      "name": "coding",
+      "keywords": ["code", "python", "js", "javascript", "bug", "debug", "function", "variable", "api", "programming"],
+      "model": "bailian/qwen3-coder-plus",
+      "priority": 1
+    },
+    {
+      "name": "reasoning",
+      "keywords": ["reasoning", "analysis", "why", "logic", "proof", "analyze"],
+      "model": "bailian/qwen3-max-2026-01-23",
+      "priority": 2
+    },
+    {
+      "name": "writing",
+      "keywords": ["write", "report", "summary", "email", "document", "article"],
+      "model": "bailian/kimi-k2.5",
+      "priority": 3
+    },
+    {
+      "name": "creative",
+      "keywords": ["story", "creative", "poem", "novel", "script", "imagine"],
+      "model": "bailian/MiniMax-M2.5",
+      "priority": 4
+    },
+    {
+      "name": "translation",
+      "keywords": ["translate", "english", "chinese", "language"],
+      "model": "bailian/glm-5",
+      "priority": 5
+    },
+    {
+      "name": "data",
+      "keywords": ["data", "statistics", "chart", "excel", "table", "calculate"],
+      "model": "bailian/qwen3.5-plus",
+      "priority": 6
+    }
+  ],
+  "fallback_model": "bailian/qwen3.5-plus"
+}
