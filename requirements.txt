@@ -1,0 +1,2 @@
+volcengine>=1.0.0
+bce-python-sdk>=0.9.0

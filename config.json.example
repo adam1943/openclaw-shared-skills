@@ -1,0 +1,9 @@
+{
+  "volc_access_key": "your_volc_access_key_here",
+  "volc_secret_key": "your_volc_secret_key_here",
+  "volc_region": "cn-beijing",
+  "volc_vpc_id": "",
+  "baidu_access_key": "your_baidu_access_key_here",
+  "baidu_secret_key": "your_baidu_secret_key_here",
+  "baidu_region": "bj"
+}
