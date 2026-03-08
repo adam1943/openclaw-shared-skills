@@ -1,44 +1,46 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "updated": "2026-03-08",
   "default_model": "bailian/qwen3.5-plus",
   "routing_rules": [
     {
       "name": "coding",
-      "keywords": ["code", "python", "js", "javascript", "bug", "debug", "function", "variable", "api", "programming"],
+      "keywords": ["code", "python", "js", "javascript", "bug", "debug", "function", "variable", "api", "programming", "代码", "编程", "函数", "变量", "调试"],
       "model": "bailian/qwen3-coder-plus",
       "priority": 1
     },
     {
       "name": "reasoning",
-      "keywords": ["reasoning", "analysis", "why", "logic", "proof", "analyze"],
+      "keywords": ["reasoning", "analysis", "why", "logic", "proof", "analyze", "推理", "分析", "为什么", "原因", "逻辑", "证明"],
       "model": "bailian/qwen3-max-2026-01-23",
       "priority": 2
     },
     {
       "name": "writing",
-      "keywords": ["write", "report", "summary", "email", "document", "article"],
+      "keywords": ["write", "report", "summary", "email", "document", "article", "写", "文章", "报告", "总结", "邮件", "文档"],
       "model": "bailian/kimi-k2.5",
       "priority": 3
     },
     {
       "name": "creative",
-      "keywords": ["story", "creative", "poem", "novel", "script", "imagine"],
+      "keywords": ["story", "creative", "poem", "novel", "script", "imagine", "故事", "创意", "诗歌", "小说", "剧本"],
       "model": "bailian/MiniMax-M2.5",
       "priority": 4
     },
     {
       "name": "translation",
-      "keywords": ["translate", "english", "chinese", "language"],
+      "keywords": ["translate", "english", "chinese", "language", "翻译", "英文", "中文", "语言"],
       "model": "bailian/glm-5",
       "priority": 5
     },
     {
       "name": "data",
-      "keywords": ["data", "statistics", "chart", "excel", "table", "calculate"],
+      "keywords": ["data", "statistics", "chart", "excel", "table", "calculate", "数据", "统计", "图表", "表格", "计算"],
       "model": "bailian/qwen3.5-plus",
       "priority": 6
     }
   ],
-  "fallback_model": "bailian/qwen3.5-plus"
+  "fallback_model": "bailian/qwen3.5-plus",
+  "fast_response_mode": true,
+  "max_response_time_seconds": 30
 }
